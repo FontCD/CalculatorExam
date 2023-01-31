@@ -38,12 +38,13 @@ public class Selector {
                 rad.selectRadOperands();
             }
             case "7" -> System.exit(0);
+            default -> selectOperation();
         }
 
 
         System.out.println("\nPress any key to calculate again: ");
         BufferedReader reader2 = new BufferedReader(new InputStreamReader(System.in));
-        String everything = reader2.readLine();
+        reader2.readLine();
         selectOperation();
 
     }
