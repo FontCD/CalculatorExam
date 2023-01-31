@@ -42,10 +42,16 @@ public class Selector {
         }
 
 
-        System.out.println("\nPress any key to calculate again: ");
+        System.out.println("\nContinue or exit?\n1) New calculation\n2) Exit ");
         BufferedReader reader2 = new BufferedReader(new InputStreamReader(System.in));
-        reader2.readLine();
-        selectOperation();
+        String input2 = reader2.readLine();
+
+        if (input2.equals("1")) {
+            selectOperation();
+        }
+        if (input2.equals("2")) {
+            System.exit(0);
+        }
 
     }
 
