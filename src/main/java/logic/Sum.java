@@ -1,12 +1,12 @@
-package Logic;
+package logic;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Molt {
+public class Sum {
 
-    public void selectMoltOperands() throws IOException {
+    public void selectSumOperands() throws IOException {
         System.out.println("\nSelect operand 1:");
         BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));
         String input1 = reader1.readLine();
@@ -18,9 +18,10 @@ public class Molt {
         int operand1 = Integer.parseInt(input1);
         int operand2 = Integer.parseInt(input2);
 
-        int result = operand1 * operand2;
+        int result = operand1 + operand2;
 
         System.out.println("Result: " + result);
+
     }
 
 }
