@@ -43,7 +43,7 @@ public class Selector {
 
         System.out.println("\nPress any key to calculate again: ");
         BufferedReader reader2 = new BufferedReader(new InputStreamReader(System.in));
-        reader2.readLine();
+        String everything = reader2.readLine();
         selectOperation();
 
     }
